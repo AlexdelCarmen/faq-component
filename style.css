@@ -1,3 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Kumbh Sans", sans-serif;
+  --bold: 700;
+  --accent-1: hsl(238, 29%, 16%);
+  --accent-2: hsl(14, 88%, 65%);
+  --color-1: hsl(237, 12%, 33%);
+  --color-2: hsl(240, 6%, 50%);
+  --divider-color: hsl(240, 5%, 91%);
+  --light-color: #fff;
+  --bg-gradient-1: hsl(273, 75%, 66%);
+  --bg-gradient-2: hsl(240, 73%, 65%);
+  --para-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient-2);
+  background: linear-gradient(
+    0deg,
+    var(--bg-gradient-2) 0,
+    var(--bg-gradient-1) 50%
+  );
+
+  font-family: var(--main-font);
+  font-size: var(--para-size);
+}
+
+.cube,
+.faq-img-desktop,
+.img-shadow-desktop {
+  display: none;
+}
+
+.faq-container {
+  background-color: var(--light-color);
+  width: 400px;
+  min-width: 300px;
+  margin: 8rem auto;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.faq-img-mobile,
+.img-shadow-mobile {
+  width: 300px;
+  position: absolute;
+}
+
+.faq-img-mobile {
+  top: -170px;
+}
+
+.img-shadow-mobile {
+  top: -35px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 32px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
