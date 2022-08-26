@@ -99,6 +99,10 @@ h1 {
   font-weight: var(--bold);
 }
 
+.flip {
+  transform: rotate(180deg);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
