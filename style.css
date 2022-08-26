@@ -97,6 +97,7 @@ h1 {
   padding: 0 0 20px 0;
   border-bottom: solid 1px var(--divider-color);
   font-weight: var(--bold);
+  display: none;
 }
 
 .flip {
@@ -109,4 +110,8 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.visible {
+  display: block !important;
 }
