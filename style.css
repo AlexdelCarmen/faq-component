@@ -1,4 +1,4 @@
-* {
+>>* {
   box-sizing: border-box;
 }
 
@@ -28,6 +28,7 @@ body {
   color: var(--color-1);
   font-family: var(--main-font);
   font-size: var(--para-size);
+  z-index: 9;
 }
 
 .cube,
@@ -38,11 +39,11 @@ body {
 
 .faq-container {
   background-color: var(--light-color);
-  width: 400px;
+  width: 300px;
   min-width: 300px;
   margin: 8rem auto;
   border-radius: 30px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 1px 10px 50px var(--accent-1);
 }
 
@@ -55,12 +56,12 @@ body {
 
 .faq-img-mobile,
 .img-shadow-mobile {
-  width: 300px;
+  width: 200px;
   position: absolute;
 }
 
 .faq-img-mobile {
-  top: -170px;
+  top: -125px;
 }
 
 .img-shadow-mobile {
@@ -71,12 +72,16 @@ h1 {
   text-align: center;
   margin-top: 120px;
   font-size: 32px;
+  color: var(--accent-1);
+  font-weight: var(--bold);
 }
+
 
 .faq-question {
   font-size: var(--para-size);
   font-family: var(--main-font);
   border: none;
+
   background-color: transparent;
   width: 100%;
   text-align: left;
@@ -93,9 +98,13 @@ h1 {
   color: var(--accent-2);
 }
 
+.faq-row {
+  border-bottom: solid 1px var(--divider-color);
+}
+
 .faq-answer {
   padding: 0 0 20px 0;
-  border-bottom: solid 1px var(--divider-color);
+
   font-weight: var(--bold);
   display: none;
 }
@@ -114,4 +123,58 @@ h1 {
 
 .visible {
   display: block !important;
+}
+
+@media (min-width: 900px) {
+  .faq-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 900px;
+    min-height: 500px;
+  }
+
+  .img-shadow-mobile {
+    display: none;
+  }
+
+  .faq-img-mobile {
+    display: none;
+  }
+
+  .cube,
+  .faq-img-desktop,
+  .img-shadow-desktop {
+    display: unset;
+    position: absolute;
+  }
+
+  .faq-img-desktop {
+    top: -180px;
+    left: -120px;
+    z-index: 9;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);
+  }
+
+  .cube {
+    z-index: 10;
+    top: -50px;
+    left: -125px;
+  }
+
+  .img-shadow-desktop {
+    top: -550px;
+    left: -600px;
+    z-index: 0;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 59% 100%);
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .faq-text-container {
+    width: 50%;
+  }
 }
