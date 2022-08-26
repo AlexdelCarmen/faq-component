@@ -28,7 +28,7 @@ body {
   color: var(--color-1);
   font-family: var(--main-font);
   font-size: var(--para-size);
-  z-index: 9;
+
 }
 
 .cube,
@@ -114,11 +114,13 @@ h1 {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
+  margin-top: -25px;
+  color: var(--divider-color);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--accent-2);
 }
 
 .visible {
